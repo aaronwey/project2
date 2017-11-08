@@ -1,0 +1,64 @@
+<div class = "master-container">
+
+	<div class = "recipe">	
+	items stocked
+		<ul>
+			{{#each stock}}
+			<li>
+				{{this.item_name}}
+                    <form action="update/{{this.id}}?_method=PUT" method="POST">
+                        <button class="btn btn-primary" type="submit">Use item</button>
+                    </form>	
+                    <form action="delete/{{this.id}}?_method=DELETE" method="POST">
+                        <button class="btn btn-primary" type="submit">Delete item</button>
+                    </form>                    
+            </li>
+            {{/each}}
+        </ul>			
+	</div>
+	<div class = "fridge">
+		<div class = 'items'>
+		items to use
+		<ul>
+			{{#each stock}}
+			{{#if this.include}}
+				<li>
+					{{this.item_name}}
+                    <form action="return/{{this.id}}?_method=PUT" method="POST">
+                        <button class="btn btn-primary" type="submit">Finished using</button>
+                    </form>						
+				</li>
+			{{/if}}
+			{{/each}}
+		</ul>
+                
+		</div>
+	</div>
+	<div class = "cupboard">
+		<div class = 'items'>
+		cupboard
+            <form class="create-update-form" action="create" method="POST">
+
+                <div class="form-group">
+                    <label for="ca">Item:</label>
+                    <input type="text" id="ca" name="name" placeholder="Add food">
+                </div>
+                <div class="form-group">
+                    <label for="ca">category:</label>
+                    <input type="text" id="ca" name="cat" placeholder="Add food">
+                </div>
+
+                <button class="btn btn-secondary" type="submit">Add</button>
+            </form>
+
+		</div>
+	</div>
+	<div class = "counter">
+		<div class = 'items'>
+		counter
+		<input type="text" id="co" name="name" placeholder="food">
+		<button class="btn btn-secondary" type="submit">Add item</button>
+		</div>
+	</div>
+ 
+ </div>

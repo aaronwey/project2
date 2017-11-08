@@ -1,0 +1,78 @@
+.home {
+  margin: 10px;
+}
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+}
+
+/*body {
+  background-image: url("http://cliparting.com/wp-content/uploads/2016/11/Kitchen-clip-art-images-free-clipart-clipartix.jpg");
+    background-repeat: no-repeat;
+}*/
+
+.vertical-center {
+  margin: 12%;
+}
+
+body {
+  height: 100%;
+  background-image: url("http://cliparting.com/wp-content/uploads/2016/11/Kitchen-clip-art-images-free-clipart-clipartix.jpg");
+  background-repeat: no-repeat;
+  /*min-height: 100%;*/
+ width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+.master-container {
+    min-height: 100%; /* force height of html and body */
+
+   
+}
+
+.recipe { 
+  position: absolute;
+  left: 75%;
+  width: 25%;
+  height: 100%;
+  /*padding: 20px;*/
+  /*margin-left: 30px;*/
+  background: yellow;
+  border: 1px solid #eee;
+}
+
+.fridge {
+  position: absolute;
+  left: 53%;
+  width: 20%;
+  height: 40%;
+  background: white;
+  text-align: center;
+  margin-top: 20%
+}
+
+.cupboard {
+  position: absolute;
+  left: 27%;
+  width: 20%;
+  height: 30%;
+  background: white;
+  text-align: center; 
+}
+
+.counter {
+  position: absolute;
+  left: 27%;
+  width: 20%;
+  height: 30%;
+  background: white;
+  text-align: center; 
+  margin-top: 20%;
+}
+
+.items {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
