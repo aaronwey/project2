@@ -44,31 +44,47 @@ body {
 
 .fridge {
   position: absolute;
-  left: 53%;
-  width: 20%;
-  height: 40%;
-  background: white;
+  left: 40%;
+  width: 24%;
+  height: 50%;
   text-align: center;
-  margin-top: 20%
+  margin-top: 24.5%;
 }
 
-.cupboard {
+.freezer {
   position: absolute;
-  left: 27%;
-  width: 20%;
-  height: 30%;
-  background: white;
+  left: 40%;
+  width: 24%;
+  height: 31%;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.spice {
+  position: absolute;
+  left: 23.7%;
+  width: 12.5%;
+  height: 26.5%;
+  margin-top: 7.8%;
   text-align: center; 
 }
 
-.counter {
+.clock {
   position: absolute;
-  left: 27%;
-  width: 20%;
-  height: 30%;
-  background: white;
+  left: 7%;
+  width: 10%;
+  height: 20%;
+  margin-top: 8%;
   text-align: center; 
-  margin-top: 20%;
+}
+
+.pantry {
+  position: absolute;
+  left: 9%;
+  width: 26%;
+  height: 37%;
+  text-align: center; 
+  margin-top: 29%;
 }
 
 .items {
@@ -77,9 +93,8 @@ body {
     transform: translateY(-50%);
 }
 
-img {    
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
+#meat{
+  width: 100%;
 }
+
+

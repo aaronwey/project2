@@ -22,9 +22,9 @@ router.get("/", function(req, res) {
 
 router.post("/create", function(req, res) {
   stock.create([
-    "item_name", "category", "include"
+    "item_name", "category", "storage", "include"
   ], [
-    req.body.name, req.body.cat, 0
+    req.body.name, req.body.cat, req.body.place, 0
   ], function(result) {
     // Send back the ID of the new quote
     res.redirect('/');
