@@ -94,7 +94,50 @@ body {
 }
 
 #meat{
-  width: 100%;
+  position: relative;
 }
 
+#meat img{
+  position: absolute;
+  top: 22px;
+  left: 60px;
+}
 
+#dairy {
+  position: relative;
+}
+
+#dairy img{
+  position: absolute;
+  top: 22px;
+  left: 210px;
+}
+
+#vegetable {
+  position: relative;
+}
+
+#vegetable img {
+  position: absolute;
+  top: 145px;
+  left: 60px;
+}
+
+#fruit {
+  position: relative;
+}
+
+#fruit {
+  position: absolute;
+  top: 145px;
+  left: 210px;  
+}
+
+#grain {
+  position: relative;
+}
+
+#grain img {
+  position: absolute;
+  left: 80px;
+}
